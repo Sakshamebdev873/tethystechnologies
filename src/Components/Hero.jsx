@@ -72,7 +72,7 @@ const Hero = () => {
         <div className="w-full grid md:grid-cols-2 grid-cols-1 items-center  box justify-between mt-5 pb-16 py-10 md:px-32 px-0 ">
           <img
             id="hello"
-            src="/Event/3.jpg"
+            src="/33.jpg"
             alt="image"
             className=" mt-5 rounded-lg object-cover    "
           />
