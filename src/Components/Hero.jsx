@@ -1,12 +1,10 @@
 import React from "react";
-import Brands from "./Brands";
-import Carsouel from "./Carsouel";
+
 import Title from "./Title";
 import Reviews from "./Reviews";
 import Footer from "./Footermain";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./Navbar";
 const Hero = () => {
   const herocourselimages = [
@@ -74,7 +72,7 @@ const Hero = () => {
         <div className="w-full grid md:grid-cols-2 grid-cols-1 items-center  box justify-between mt-5 pb-16 py-10 md:px-32 px-0 ">
           <img
             id="hello"
-            src="/33.jpg"
+            src="/Event/3.jpg"
             alt="image"
             className=" mt-5 rounded-lg object-cover    "
           />
