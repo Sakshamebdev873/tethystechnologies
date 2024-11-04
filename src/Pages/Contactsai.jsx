@@ -17,7 +17,7 @@ const Contactsai = () => {
         <h1 className="text-center text-4xl lg:mt-0 mt-4 lg:text-6xl font-medium  ">Contact us</h1>
         <p className="mt-5  " >
           Have more questions? We’ll find you the answers. Whether you’re ready
-          to book a trip now or simply want to learn more about what Liberty
+          to book a trip now or simply want to learn more about what Om Sai
           Travel has to offer, our consultants are available to help.
         </p>
         <h1 className="text-4xl font-medium mt-7 " >
@@ -28,7 +28,7 @@ const Contactsai = () => {
         <h1 className="text-4xl font-medium  " >Connect With a Consultant</h1>
         <p className="mt-7 pb-7" >Work with an expert close to you or based on destination expertise. Our team is available in-store or virtually.</p>
         <h1 className="text-4xl font-medium  " >Connect In Store</h1>
-        <p className="mt-7 pb-7 " >Visit us in one of our 5 locations in NJ, NY, PA and MA to start planning with your local travel expert!</p>
+        <p className="mt-7 pb-7 " >Visit us in our Office Address</p>
         <h1 className="text-4xl font-medium " >Connect By Email</h1>
         <p className="mt-7 pb-7 " ><p className="text-blue-500 cursor-pointer " >mayank.caddcenter@gmail.com</p> <br/>Get a quote or other info by sending us a message. Our travel consultants will contact you within 1 business day.</p>
         </div>

@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import Carsouel from '../Components/Carsouel'
 const FeaturedDesign = () => {
   const blue = [
-    "/7.jpg",
-    "/8.jpg",
-    "/9.jpg",
-    "/10.jpg",
-  ];
+    "/h1.jpg",
+    "/h2.jpg",
+    "/h3.jpg",
+    "/h4.jpg" ,];
   return (
     // <div className="mt-4 w-full pb-8">
     //   <div className="grid grid-cols-1 md:grid-cols-2 h-full lg:grid-cols-3 gap-x-12 px-12 ">

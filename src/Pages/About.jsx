@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import {Link } from  'react-router-dom'
+// import {Link } from  'react-router-dom'
 import Footer from "../Components/Footermain";
 const About = () => {
   return (
@@ -11,63 +11,75 @@ const About = () => {
         <p className="h-[2px] w-16 bg-gray-900 text-center "></p>
       </div>
 
-      <div className="lg:mb-16 mb-0 lg:pb-12 lg:grid lg:items-center lg:grid-cols-2 gap-x-4 flex flex-col items-center lg:px-16 px-6 ">
+      <div className="lg:mb-16 mb-0 lg:pb-12 lg:grid lg:items-center lg:grid-cols-2  flex flex-col items-center lg:px-16 px-6 ">
         <img
-          src="https://img.freepik.com/free-vector/teamwork-concept-landing-page_52683-20164.jpg?size=626&ext=jpg&ga=GA1.1.1489463704.1727353803&semt=ais_hybrid"
+          src="https://caddmantra.com/wp-content/uploads/2023/08/architectural-blueprints-1-684x1024.jpg"
           alt="about us"
-          className="object-cover rounded-md  "
+          className="object-cover rounded-md px-2 lg:px-7 lg:mt-16  "
         />
-        <div className="flex flex-col lg:mt-4 mt-12 items-center ">
-          <h1 className="text-4xl mb-6 lg ">About</h1>
+        <div className="flex flex-col  mt-12 lg:mt-0 items-center ">
+          <h1 className="text-4xl mb-6 ">About</h1>
           <p>
-            CADD Institute of Advance Skill Group is a global network of diversified skill
-            development centers. We are a technical workforce development
-            enterprise. CADD Centre Training services is the training division
-            of CADD Centre Group.
+            With over 15 years of dedication to building skills that matter, CAD
+            Institute of Advanced Skill Group has evolved into a thriving global
+            network of technical development centers. We’re passionate about
+            more than just training—we’re on a mission to shape a powerful,
+            skilled workforce ready to meet the challenges of tomorrow. Our
+            network spans diverse fields, from engineering and design to
+            advanced manufacturing, all focused on practical, job-ready skills
+            that give you a real edge. As a technical workforce development
+            enterprise, we take pride in offering hands-on learning,
+            industry-certified courses, and guidance from experienced
+            professionals. Our centers are designed to help you turn your
+            ambitions into expertise and connect you to a global community
+            that’s equally passionate about innovation and growth. Whether
+            you're looking to start a career or level up, we’re here to support
+            your journey every step of the way. Join us at CAD Institute of
+            Advanced Skill Group, where skill meets opportunity on a global
+            scale!
           </p>
-          <h1 className="text-4xl mb-5 lg:mt-4 mt-12 ">Our History</h1>
+          <h1 className="text-4xl mb-5 lg:mt-4 mt-12 ">Advantages of Joining us</h1>
           <p>
-            Over the past decade, we have witnessed an extraordinary surge in
-            technology that has brought about a profound transformation in
-            industries on a global scale. The field of engineering has
-            consistently enticed individuals in search of promising and
-            rewarding careers. Each year, thousands of aspiring engineers
-            complete their academic journeys, carrying with them the aspiration
-            to make a significant impact on the world. However, in today’s
-            fiercely competitive landscape, securing the ideal job with a
-            commensurate salary can appear as an imposing challenge.
-            Nonetheless, at CADD Institute of Advance Skill, we have chosen to confront
-            this challenge in a distinctive manner.I would like to take a moment
-            to pay homage to the memory of my inspiration and mentor, the late
-            Shri Satya Prakash Singhal, who envisioned a platform where students
-            could engage with technology in an unconventional manner. It is
-            through his visionary spirit and unwavering dedication that we have
-            given rise to SICCES and its flagship institute, CADD Mantra. I am
-            thrilled to share that our team’s tireless efforts, combined with my
-            father’s visionary leadership and my own fervor for technology, have
-            positioned us in a league of our own, setting us apart from our
-            contemporaries.
+            Joining the CAD Institute of Advanced Skill Group offers numerous
+            advantages that can significantly enhance your career prospects. Our
+            industry-relevant training is designed in collaboration with experts
+            to ensure you acquire the skills employers are actively seeking.
+            With a focus on hands-on experience, you'll engage in real-world
+            projects that build your confidence and set you apart from the
+            competition. We understand the demands of modern life, so we offer
+            flexible learning options, including evening and weekend classes,
+            allowing you to balance your studies with work or other commitments.
+            As part of our global network, you’ll connect with peers and
+            professionals from diverse backgrounds, opening doors to
+            collaborations, mentorships, and job opportunities that transcend
+            borders. Upon completion of our courses, you’ll receive
+            certifications that validate your skills, and our dedicated career
+            services team will support you in navigating the job market. Learn
+            from experienced instructors who bring practical insights to the
+            classroom, and become part of a vibrant community of like-minded
+            individuals who share your passion for growth. By choosing the CAD
+            Institute of Advanced Skill Group, you’re not just enrolling in
+            courses; you’re investing in a transformative experience that equips
+            you with the skills, confidence, and connections needed to thrive in
+            your career!
           </p>
         </div>
       </div>
       <div className="flex flex-col lg:mt-8 mt-2 lg:px-16 px-6 ">
         <h1 className="text-4xl mb-5 mt-4 ">
-          What Does CADD Centre Group Stance For?
+          What Does CAD Institute of Advanced Skills Stance For?
         </h1>
         <p>
           We want to establish a worldwide community of students and teachers in
           which learning is continuous. We want to match our users with the
           appropriate course. We give them training and placement depending on
           their career goals, the profile, the course's industrial use,
-          certification, cost, etc. CADD Centre offers CAD/ CAE/project
-          management/ IT/industrial design/ Interior design / Fashion Design/
-          Business skills. We are continually expanding and adding new regularly
-          online and offline. In the future, we want to enhance and broaden our
-          horizons to assist our students in advancing their careers and
-          professional objectives.
+          certification, cost, etc. We are continually expanding and adding new
+          regularly online and offline. In the future, we want to enhance and
+          broaden our horizons to assist our students in advancing their careers
+          and professional objectives.
         </p>
       </div>
-      
 
       <div className="bg-[#616060] pb-16 pt-16 flex flex-col mt-12 items-center justify-center ">
         <h1 className="text-4xl text-center text-white ">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Title from "./Title";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";

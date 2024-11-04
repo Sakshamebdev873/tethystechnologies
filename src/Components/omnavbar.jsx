@@ -1,67 +1,103 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
-import { IoMdClose } from "react-icons/io";
-import {Link,NavLink} from 'react-router-dom'
+import { IoMdClose, IoMdCall } from "react-icons/io";
+import { Link, NavLink } from "react-router-dom";
+
 const Omnavbar = () => {
-const [visible,setvisible ] = useState(false)
+  const [visible, setVisible] = useState(false);
+
   return (
     <>
-      <nav className="flex justify-between items-center z-10 w-full h-20 px-4 lg:px-24 ">
-        <Link  to='/omsaitravels' >
-        <img
-          src="../Om Sai Travels.png"
-          alt="logo"
-          className="h-[10rem] w-[14rem] pt-2 "
-        /></Link>
-        <ul className="hidden lg:flex md:flex gap-x-5 items-center list-none ">
-          <NavLink to={'/omsaitravels'} className="cursor-pointer text-2xl active:border-b-2 hover:text-gray-600 hover:scale-125">
+      <nav className="flex justify-between items-center z-20 w-full overflow-hidden h-20 px-4 lg:px-24 bg-white shadow-md">
+        <Link to="/omhome">
+          <img
+            src="../Om Sai Travels.png"
+            alt="logo"
+            className="h-[8rem] lg:h-[8rem] pr-12 lg:pr-0 w-[80%]  pt-2"
+          />
+        </Link>
+
+        {/* Desktop Nav Links */}
+        <ul className="hidden lg:flex  gap-x-5 items-center list-none">
+          <NavLink
+            to="/omhome"
+            className="cursor-pointer text-2xl hover:text-gray-600 transition duration-200"
+          >
             Home
             <hr className="w-2/4 border-none bg-gray-700 h-[1.5px] hidden" />
           </NavLink>
-          <NavLink to={'/aboutsai'} className="cursor-pointer text-2xl  hover:text-gray-600 hover:scale-125">
+          <NavLink
+            to="/omabout"
+            className="cursor-pointer text-2xl hover:text-gray-600 transition duration-200"
+          >
             About
             <hr className="w-2/4 border-none bg-gray-700 h-[1.5px] hidden" />
           </NavLink>
-          <NavLink to={'/contactsai'} className="cursor-pointer text-2xl  hover:text-gray-600 hover:scale-125">
+          <NavLink
+            to="/omcontactus"
+            className="cursor-pointer text-2xl hover:text-gray-600 transition duration-200"
+          >
             Contact us
             <hr className="w-2/4 border-none bg-gray-700 h-[1.5px] hidden" />
           </NavLink>
+          <p className="py-2 px-7 bg-[#9A0000] rounded-md font-sans   text-white gap-4 flex"  ><IoMdCall className="text-2xl" />  Call us +91 9719631909  </p>
         </ul>
-        <span className="flex items-center lg:hidden md:hidden text-2xl  cursor-pointer " onClick={()=>setvisible(!visible)}  >
+
+        {/* Mobile "Call Us" Button */}
+        <p className="bg-[#9A0000] text-xs px-3 py-2 rounded-md font-sans text-white flex items-center gap-2  lg:hidden">
+          <IoMdCall className="text-lg" /> Call us +91 9719631909
+        </p>
+
+        {/* Mobile Menu Icon */}
+        <span
+          className="flex items-center lg:hidden text-2xl cursor-pointer"
+          onClick={() => setVisible(!visible)}
+        >
           <FaBars />
         </span>
       </nav>
-       {/* sidebar */}
-       <div
-        className={`absolute top-0 z-20 right-0 bottom-0 left-0 overflow-hidden bg-white ${
-          visible ? "w-full" : "w-0"
+
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 right-0 z-20 h-full bg-white w-full shadow-lg transition-transform duration-300 ${
+          visible ? "translate-x-0" : "translate-x-[100%]"
         }`}
       >
-        <div className="flex flex-col text-gray-600 list-none">
-          <div className="flex items-center gap-2 p-3">
-            <IoMdClose onClick={()=>setvisible(false)} className="text-2xl cursor-pointer" />
-            <p>Back</p>
+        <div className="flex flex-col text-gray-600">
+          <div className="flex items-center justify-between p-4 border-b">
+            <p className="text-lg font-semibold">Menu</p>
+            <IoMdClose
+              onClick={() => setVisible(false)}
+              className="text-2xl cursor-pointer"
+            />
           </div>
-          <Link to={'/omsaitravels'}
-            className={`border pt-2 pl-3 cursor-pointer hover:text-gray-600  `}
-          >
-            Home
-          </Link>
-          <Link to={'/aboutsai'}
-        
-            className={`border pt-2 pl-3 cursor-pointer hover:text-gray-600  `}
-          >
-            About
-          </Link>
-          <Link to={'/contactsai'}
-            className={`border pt-2 pl-3 cursor-pointer hover:text-gray-600  `}
-          >
-            Contact
-          </Link>
+          <div className="flex flex-col space-y-4 p-4">
+            <Link
+              to="/omhome"
+              className="text-lg font-medium hover:text-gray-600"
+              onClick={() => setVisible(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="/omabout"
+              className="text-lg font-medium hover:text-gray-600"
+              onClick={() => setVisible(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="/omcontactus"
+              className="text-lg font-medium hover:text-gray-600"
+              onClick={() => setVisible(false)}
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </>
-  )
+  );
 };
 
 export default Omnavbar;

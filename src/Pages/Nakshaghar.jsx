@@ -42,7 +42,7 @@ const Nakshaghar = () => {
       <Archnavbar />
       <div className="mt-4 flex items-center justify-center pb-12">
         {/* <Carsouel images={blue} /> */}
-        <img src="/nk.jpg" alt="" className="object-cover" />
+        <img src="/nakshamainimg.jpg" alt="" className="object-cover" />
       </div>
       <div className="mt-4 w-full pb-8 px-2 lg:px-12 ">
         <div className="grid grid-cols-1 gap-x-12 items-center  md:grid-cols-2 px-2 lg:px-10 mt-4 ">
@@ -62,12 +62,12 @@ const Nakshaghar = () => {
               unique needs and aspirations of their clients, ensuring a
               personalized experience from concept to completion. With a diverse
               portfolio that spans residential, commercial, and public spaces,
-              Naksha Ghar demonstrates versatility and creativity across various
+              नक्शा घर demonstrates versatility and creativity across various
               architectural styles. Their team of skilled professionals
               leverages cutting-edge technology and design trends to deliver
               exceptional results that not only meet but exceed client
               expectations. By fostering strong collaborations and communication
-              throughout the design process, Naksha Ghar transforms visions into
+              throughout the design process, नक्शा घर transforms visions into
               stunning realities, creating spaces that inspire, engage, and
               endure for generations to come.
             </p>
@@ -89,15 +89,15 @@ const Nakshaghar = () => {
             innovation. The company has received several prestigious awards for
             its distinctive and creative designs, highlighting its status in the
             architectural community. Recognized for its dedication to
-            sustainability, Naksha Ghar has successfully completed numerous
+            sustainability, नक्शा घर has successfully completed numerous
             projects that achieved certifications like LEED, demonstrating its
             focus on environmentally responsible practices. Client satisfaction
-            is a hallmark of Naksha Ghar's success, with a high retention rate
+            is a hallmark of नक्शा घर's success, with a high retention rate
             reflecting its ability to deliver personalized service and
             exceptional quality. The firm’s diverse portfolio encompasses a wide
-            range of projects, from elegant residential homes to expansive
+            range of projects, from elegant residential homes to expensive
             commercial spaces, showcasing its versatility and expertise in
-            handling various architectural challenges. Furthermore, Naksha Ghar
+            handling various architectural challenges. Furthermore, नक्शा घर
             has been at the forefront of integrating advanced technology into
             its design processes, utilizing tools like Building Information
             Modeling (BIM) and virtual reality (VR) for enhanced project
@@ -113,24 +113,24 @@ const Nakshaghar = () => {
             with a vision to blend innovative design with sustainability, the
             company quickly gained recognition within the industry, completing
             its first major residential project that established its reputation
-            for quality and creativity. Over the years, Naksha Ghar has garnered
+            for quality and creativity. Over the years, नक्शा घर has garnered
             multiple prestigious awards for architectural excellence, showcasing
             its commitment to innovative and sustainable practices. The firm
             expanded its services beyond residential and commercial architecture
             to include urban planning and landscape design, highlighting its
-            adaptability to market demands. Notably, Naksha Ghar has achieved
+            adaptability to market demands. Notably, नक्शा घर has achieved
             sustainability milestones with several projects receiving LEED and
             other green building certifications, reflecting its dedication to
             environmentally friendly architecture. The integration of advanced
             technologies, such as Building Information Modeling (BIM) and
             virtual reality (VR), has further enhanced its project delivery and
-            client engagement. Additionally, Naksha Ghar has actively
+            client engagement. Additionally, नक्शा घर has actively
             participated in community engagement initiatives, launching projects
             that promote sustainable development and strengthen its ties to
             local communities. The firm has also ventured into international
             collaborations, enriching its design philosophy and expertise
             through partnerships with global architects and firms. These
-            milestones collectively illustrate Naksha Ghar's commitment to
+            milestones collectively illustrate नक्शा घर's commitment to
             excellence in architecture and its impact on the communities it
             serves.
           </p>

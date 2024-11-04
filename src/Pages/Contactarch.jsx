@@ -38,7 +38,7 @@ const Contactarch = () => {
         </form>
         <h1 className='text-center font-medium text-5xl mt-12' > Report a Concern</h1>
         <p className='text-center mt-12 px-12 ' >
-        We care deeply about upholding our commitment to integrity. If you see something concerning, we hope you will make a report. The Gilbane Ethics Hotline provides a confidential, anonymous way to report violations to our Code of Ethics or to address other concerns.
+        We care deeply about upholding our commitment to integrity. If you see something concerning, we hope you will make a report. The नक्शा घर provides a confidential, anonymous way to report violations to our Code of Ethics or to address other concerns.
         </p>
     </div>
     <Archfooter/>

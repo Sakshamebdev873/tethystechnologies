@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
+import { IoMdCall } from "react-icons/io";
 import {Link,NavLink} from 'react-router-dom'
 const Navbar = () => {
 const [visible,setvisible ] = useState(false)
@@ -25,7 +26,14 @@ const [visible,setvisible ] = useState(false)
             Contact us
             <hr className="w-2/4 border-none bg-gray-700 h-[1.5px] hidden" />
           </NavLink>
+          {/* <NavLink to={'/brands'} className="cursor-pointer text-2xl  hover:text-gray-600 hover:scale-125">
+            Brands
+            <hr className="w-2/4 border-none bg-gray-700 h-[1.5px] hidden" />
+          </NavLink> */}
+          <p className="py-2 px-7 bg-[#9A0000] rounded-md font-sans   text-white gap-4 flex"  ><IoMdCall className="text-2xl" />  Call us +91 9719631909  </p>
+        
         </ul>
+        <p className=" bg-[#9A0000] text-xs px-1 py-2 rounded-md font-sans gap-2 md:hidden lg:hidden  text-white flex"  ><IoMdCall className=" text-[16px] lg:text-2xl" />  Call us +91 9719631909  </p>
         <span className="flex items-center lg:hidden md:hidden text-2xl hover:rotate-90 cursor-pointer " onClick={()=>setvisible(!visible)}  >
           <FaBars />
         </span>

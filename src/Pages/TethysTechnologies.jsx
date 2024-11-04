@@ -3,17 +3,16 @@ import EventFooter from "../Footer brand/EventFooter";
 import Tethnavbar from "../Components/Tethnavbar";
 import TethReviews from "../Components/TethReviews";
 import TethServices from "./TethServices";
-import Brands from "../Components/Brands";
+import Carsouel from '../Components/Carsouel'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 const TethysTechnologies = () => {
-  useEffect(() => {
-    gsap.from("#a", {
-     
-      opacity: 1,
-      duration: 1.2,
-      delay:0.1
-    }),
+  useGSAP(() => {
+    // gsap.from("#a", {
+    //   opacity: 1,
+    //   duration: 1.2,
+    //   delay:0.1
+    // }),
     gsap.from("#b", {
       y: 400,
       opacity: 0,
@@ -28,43 +27,49 @@ const TethysTechnologies = () => {
         y: -400,
         opacity: 0,
         duration: 1.7,
-      }),
-      gsap.from("#e", {
-        y: -400,
-        opacity: 0,
-        duration: 1.7,
-      }),
-      gsap.from("#f", {
-        y: -400,
-        opacity: 0,
-        duration: 1.7,
-      }),
-      gsap.from("#g", {
-        y: -400,
-        opacity: 0,
-        duration: 1.7,
       })
-      gsap.to("#i", {
-        y: -400,
-        opacity: 0,
-        duration: 1.7,
-      })
+      
+    // gsap.to("#i", {
+    //   y: -400,
+    //   opacity: 0,
+    //   duration: 1.7,
+    // })
     // gsap.to('#c',{
     //   opacity:1,
     //   duration:1
     // })
   }, []);
-  const even = ["/Event/1.jpg", "/Event/3.jpg", "/Event/4.jpg"];
+  useEffect(()=>{
+    gsap.from("#e", {
+      y: -400,
+      opacity: 0,
+      duration: 1.7,
+    }),
+    gsap.from("#f", {
+      y: -400,
+      opacity: 0,
+      duration: 1.7,
+    }),
+    gsap.from("#g", {
+      y: -400,
+      opacity: 0,
+      duration: 1.7,
+    });
+  },[])
+  const even = ["/main.jpg",
+    "/party.jpg",
+     "https://imgs.search.brave.com/3rFXTKbihGge1MKjTa7QUMeFKaEaB53nNZUkdU0l9lg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9lbGVjdHJpY2lh/bi10b29scy1lbGVj/dHJpY2FsLWVxdWlw/bWVudC13aXJpbmct/ZGlhZ3JhbV8xMjM1/ODMxLTMzMDYyNi5q/cGc_c2l6ZT02MjYm/ZXh0PWpwZw",
+      "https://imgs.search.brave.com/1IpmpQaeWyB1c2gXobseJY1yMHJ3a9M70yBcFaHHaxU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWtv/Y29uc3RydWN0aW9u/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMy8wOS93aGF0/LWlzLWNpdmlsLWNv/bnN0cnVjdGlvbi5q/cGc",
+    "/mount1.jpg","/mount2.jpg","/arch1.jpg","/arch2.jpg"];
   return (
     <>
       <Tethnavbar />
       <div className="mt-4 flex items-center justify-center overflow-x-hidden pb-12">
-        <img src="/ee.jpg" alt="" />
+        <Carsouel images={even} />
       </div>
       <div className="mt-4 overflow-x-hidden w-full">
         <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 px-2 lg:px-12 mt-4 ">
           <img
-            
             src="/event.webp"
             alt="omsaitravels"
             className="object-cover mt-4 box rounded-lg "
@@ -96,7 +101,6 @@ const TethysTechnologies = () => {
       </div>
 
       <div className="flex lg:flex-row md:flex-row  flex-col mt-16 lg:px-6 px-5 justify-center lg:justify-around items-center ">
-        
         <img
           id="c"
           src="https://balloonpro.in/wp-content/uploads/2023/08/event-organisers-bangalore.webp"
@@ -111,7 +115,7 @@ const TethysTechnologies = () => {
             We never compromise the quality for high-quality to décor services
           </p>
         </div>
-       
+
         <div className="flex items-center lg:flex-row lg:mt-0 mt-8 flex-col justify-between">
           <img
             id="d"
@@ -154,16 +158,17 @@ const TethysTechnologies = () => {
       {/* <Organisedevents /> */}
 
       <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 px-2 lg:px-12 mt-12 py-14 ">
-        <img id="f"
+        <img
+          id="f"
           src="/aa.webp"
           alt="omsaitravels"
           className="object-cover box  mt-4 rounded-lg "
         />
         <div id="g" className="flex flex-col px-2 lg:pl-7 ">
-          <h1  className=" text-4xl  lg:text-5xl font-medium mt-6 lg:mt-4 md:mb-4 ">
+          <h1 className=" text-4xl  lg:text-5xl font-medium mt-6 lg:mt-4 md:mb-4 ">
             What makes us special?
           </h1>
-          <p  className="mt-4 ">
+          <p className="mt-4 ">
             As Tethys Technologies, our uniqueness lies in our commitment to
             revolutionizing event management through a comprehensive,
             user-friendly platform. We empower event planners with tools that
@@ -186,7 +191,7 @@ const TethysTechnologies = () => {
       </div>
       <TethReviews />
       <TethServices />
-      <Brands />
+      {/* <Brands /> */}
       <EventFooter />
     </>
   );

@@ -22,7 +22,7 @@ const ImageCarousel = ({images}) => {
   };
 
   return (
-    <div className="relative w-full mt-2 h-[550px] ">
+    <div className="relative w-full mt-2 h-[550px] lg:h-[100vh] ">
       {/* Image Slides */}
       {images.map((image, index) => (
         <div

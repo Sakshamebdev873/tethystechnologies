@@ -27,7 +27,7 @@ const TethContact = () => {
         <div className="flex flex-col pl-2 px-2 lg:pl-12">
           <form
             onSubmit={handlesubmit}
-            className="flex flex-col mb-16 min-h-[20rem] lg:min-w-[25rem] lg:w-[45rem] lg:mt-24 mt-14 gap-4  "
+            className="flex flex-col mb-16 min-h-[20rem] lg:min-w-[25rem] lg:w-[35rem] lg:mt-24 mt-14 gap-4  "
           >
             <h1 className="text-center text-5xl font-medium mb-7 " >Contact us</h1>
             <input

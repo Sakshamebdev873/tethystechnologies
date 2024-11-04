@@ -30,17 +30,17 @@ const TethServices = () => {
     return (
         <div className='mt-5 flex flex-col gap-12' >
             <Title text1={'Our'} text2={'Services'} />
-            <div className='grid grid-cols-1 lg:grid-cols-2 items-center lg:px-32 px-2 ' >
+            <div className='grid grid-cols-1 lg:grid-cols-2 place-content-center lg:px-32 md:px-32 sm:px-14 px-2 ' >
                 <img id='w' src="https://eventcracker.com/wp-content/uploads/2020/06/about.jpg" alt="wedding" className='object-cover rounded-lg ' />
-                <div className='flex flex-col pl-2 lg:pl-7' >
-                    <h1 className='text-5xl font-medium mt-7 lg:mt-0 ' >Wedding</h1>
+                <div className='flex flex-col items-start justify-start pl-2 lg:pl-7' >
+                    <h1 className='text-5xl text-left font-medium mt-7 lg:mt-0 ' >Wedding</h1>
                     <p className='mt-7' >Every bride dreams of having the perfect wedding, but planning that can be quite a task. Throw in all of the cultural nuances associated with ethnic weddings and the task can become overwhelming. We work directly with you and your families to handle all of aspects of your wedding. The result is an extraordinary event that is just as you envisioned.</p>
                 </div>
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 items-center px-2 lg:px-20 ' >
                 <div className='flex flex-col pl-2 lg:pl-7' >
                     <h1 className='text-5xl font-medium' >DESTINATION WEDDINGS</h1>
-                    <p className='mt-7 pr-7 ' >Thailand, Bali, Dubai, Udaipur, Malaysiaare just a few of the locations around the world where we have planned Destination Weddings and Events. We work directly with you to discover the perfect location and to ensure that all the details are in place for your big day. Our offices are located in the Thailand &Portland but our planning takes us all over the world.</p>
+                    <p className='mt-7 pr-7 ' >we can planned Destination Weddings and Events across nation . We work directly with you to discover the perfect location and to ensure that all the details are in place for your big day.</p>
                 </div>
                 <img id='x' src="https://eventcracker.com/wp-content/uploads/2020/06/2.jpg" alt="wedding" className='object-cover rounded-lg lg:mt-0 mt-4 ' />
             </div>
